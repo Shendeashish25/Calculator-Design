@@ -18,7 +18,16 @@ body{
     margin: 80px auto;
     box-shadow: 5px 5px 10px 2px black;
     padding: 20px;
+   
+
 }
+
+@font-face {
+    font-family: 'DS-Digital Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DS-Digital Normal'), url('DS-DIGI.woff') format('woff');
+    }
 
 .screen{
     width: 350px;
@@ -29,8 +38,44 @@ body{
     margin: 20px auto;
     background-color: #a1af77;
     padding: 5px 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: "DS-Digital Normal";
+}
+.btn{
+
+    width: 70px;
+    height: 40px;
+    font-size: 20px;
+text-align: center;
+padding: 2px 0px;
+margin: 10px;
+border: 1px solid black;
+border-radius: 5px;
+cursor: pointer;
 }
 
+.btn:hover{
+    box-shadow: 0 0 5px 0 white;
+   transition: 0.5s;
+}
+.btn-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 320px;
+    
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.btn-red{
+    background-color: #ff6348;
+    height: 104px;
+    color: white;
+}
 </style>
 
 
@@ -40,6 +85,32 @@ body{
 <div class="main-container"> 
 
     <input type="text"  value="0" class="screen"/>
+
+    <div class="btn-box">
+<button class="btn">AC</button>
+<button class="btn">7</button>
+<button class="btn">4</button>
+<button class="btn">1</button>
+<button class="btn">0</button>
+
+
+<button class="btn">M+</button>
+<button class="btn">8</button>
+<button class="btn">2</button>
+<button class="btn">5</button>
+<button class="btn">.</button>
+
+<button class="btn">/</button>
+<button class="btn">9</button>
+<button class="btn">6</button>
+<button class="btn">3</button>
+<button class="btn">%</button>
+
+<button class="btn">X</button>
+<button class="btn">-</button>
+<button class="btn">+</button>
+<button class="btn btn-red">=</button>
+    </div>
 
 
 </div>
